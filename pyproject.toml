@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "owensminor-etl-focus"
+version = "0.1.0"
+description = "create om focus"
+authors = ["jlmodell <modell.jeff@me.com>"]
+readme = "README.md"
+packages = [{include = "owensminor_etl_focus"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+pandas = "^2.0.3"
+rich = "^13.4.2"
+pydantic = "^2.0.2"
+pyinstaller = "^5.13.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
